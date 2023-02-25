@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .section1{
     background: url('/assets/tes1.jpg');
 }
@@ -27,7 +28,7 @@
     min-height: 15rem;
 }
 .absolutez{
-    z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+    z-index: 10000000000000000;
 }
 .btn-shadow{
     box-shadow: 0rem 0rem 0.3rem 0.2rem rgba(10, 10, 10, 0.374);
@@ -73,7 +74,8 @@
         font-weight: 600;
         text-transform: capitalize;
     }
-    .menu:hover, li:hover{
+    .menu:hover,
+     li:hover{
         background-color: rgba(112, 128, 144, 0.2);
         transition-duration: 0.1s;
     }
@@ -93,7 +95,6 @@
 
     .btnHide{
         transform: translateX(100%);
-        /* absolute bg-black/10 backdrop-blur-[4px] h-[100vh] w-[100vw] */
     }
     .btnClosed{
         transform: translateX(0%);
@@ -106,15 +107,28 @@
     }
 }
 @media screen and (min-width: 1200px) {
+
     .hiddenUL{
         display: none;
     }
-    .close, .closeFather{
+    .close,
+    .closeFather{
         display: none;
     }
     ul{
         display: flex;
-        gap: 2rem;    }
+        gap: 1.5rem;    
+    }
+    li{
+        padding: 0.2rem 0.4rem;
+        border-radius: 4px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+    li:hover{
+        background-color: rgba(112, 128, 144, 0.2);
+        transition-duration: 0.1s;
+    }
     .nav{
         display: none;
     }

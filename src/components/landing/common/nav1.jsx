@@ -4,41 +4,17 @@ import { navData } from "../../../assets/data";
 function Nav1({Nav, setNav}) {
   const [windowWidth, setWindowWidth] = useState(true);
 
-  const All1 = navData.all1.map((data)=>{
-    return(
-      <a 
-        href={data.href}
-        key={data.name}>
-        <li>
-          {data.name}
-        </li>
-      </a>
-    )
-  })
-
-  const sm1 = navData.sm1.map((data)=>{
-    return(
-      <a 
-        href={data.href}
-        key={data.name}>
-        <li>
-          {data.name}
-        </li>
-      </a>
-    )
-  })
-
-  const All2 = navData.all2.map((data)=>{
-    return(
-      <a 
-        href={data.href}
-        key={data.name}>
-        <li>
-          {data.name}
-        </li>
-      </a>
-    )
-  })
+  const hostNav=(data)=>{
+    return data.map((data)=>{
+      return(
+        <a 
+          href={data.href}
+          key={data.name}>
+          <li>
+            {data.name}
+          </li>
+        </a>
+    )})}
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -76,16 +52,15 @@ function Nav1({Nav, setNav}) {
           </button>
         </div>
 
-        {/* the navigation buttons here */}
         <ul>
-          {All1}
+          {hostNav(navData.all1)}
         </ul>
         <ul
           className="hiddenUL">
-          {sm1}
+          {hostNav(navData.sm1)}
         </ul>
         <ul>
-          {All2}
+          {hostNav(navData.all2)}
         </ul>
 
         <ul className="hiddenUL">

@@ -41,7 +41,7 @@ export function updater (number, action, setOrder){
 
 export function PopUp({children}) {
     const [Order, setOrder] = useState([
-        [true, false], 
+        [false, false], 
         [false, false], 
         [false, false], 
         [false, false], 
