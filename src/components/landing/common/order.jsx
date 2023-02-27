@@ -1,5 +1,5 @@
 function Order({order, setOrder, children, position}) {
-    
+    console.log(order)
     const setOrd = ()=>{
         setOrder([
         [false, false], 

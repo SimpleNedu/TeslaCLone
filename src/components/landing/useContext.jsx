@@ -6,7 +6,6 @@ const globalValue =  [
         [false, false], 
         [false, false], 
         [false, false], 
-        [false, false], 
         [false, false],  
         [false, false], 
         [false, false], 
@@ -24,7 +23,7 @@ export const useAm = () =>{
     return useContext(OpeningsAndClosing)
 }
 
-export function updater (number, action, setOrder){
+export function updater (number, action){
     const value =  globalValue
     switch (action) {
         case 'OPENRIGHT':
@@ -34,7 +33,6 @@ export function updater (number, action, setOrder){
         case 'OPENLEFT':
             value[Number(number)]=[true, false]
             break;
-    
       default:
               break;
       }
