@@ -2,27 +2,27 @@ export const navData ={
     all1: [
     {
         name: "Model S",
-        href: "/"
+        href: "/#models"
     },
     {
         name: "Model 3",
-        href: "/"
+        href: "/#model3"
     },
     {
         name: "Model X",
-        href: "/"
+        href: "/#modelx"
     },
     {
         name: "Model Y",
-        href: "/"
+        href: "/#modely"
     },
     {
         name: "Solar Roof",
-        href: "/"
+        href: "/#solarRoof"
     },
     {
         name: "Solar Panels",
-        href: "/"
+        href: "/#solarpanels"
     }
     ],
     sm1: [
@@ -93,43 +93,56 @@ export const navData ={
 export const HeroData = {
     models: {
         name: 'Model S',
-        price: "200",
+        price: "12400",
         id: 0,
         type: 'car',
+        rent: '348',
+        colors: ['red', 'blue', 'black', "grey", "white"],
+        alt: "leasing starting at $345/mth"
     },
     model3: {
         name: 'Model 3',
-        price: "200",
+        price: "12900",
         id: 1,
         type: 'car',
+        rent: '348',
+        colors: ['red', 'blue', 'black', "grey", "white"],
+        alt: ""
     },
     modelx: {
         name: 'Model X',
-        price: "200",
+        price: "18900",
         id: 2,
         type: 'car',
+        rent: '348',
+        colors: ['red', 'blue', 'black', "grey", "white"],
+        alt: "schedule a demo drive"
     },
     modely: {
         name: 'Model Y',
-        price: "200",
+        price: "10000",
         id: 3,
         type: 'car',
+        rent: '348',
+        colors: ['red', 'blue', 'black', "grey", "white"],
+        alt: "schedule a demo drive"
     },
     solarRoof: {
         name: 'Solar Roof',
-        price: "200",
         id: 4,
         type: 'solar',
+        alt: "lower cost solar panels"
     },
     solarPanels: {
         name: 'Solar Panels',
-        price: "200",
         id: 5,
         type: 'solar',
+        alt: "produce clean energy from your phone"
     },
     charger: {
-        name: '',
+        name: 'accesories',
         id: 6,
         type: 'charger',
+        alt: "l"
     }
 } 

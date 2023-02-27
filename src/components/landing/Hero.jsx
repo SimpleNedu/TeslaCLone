@@ -1,9 +1,6 @@
-import { useState } from 'react'
-import Order from './common/order'
 import TextBox from './common/textBox'
 
 function Hero({data}) {
-  const [order, setOrder] = useState(true)
 
   return (
    <div

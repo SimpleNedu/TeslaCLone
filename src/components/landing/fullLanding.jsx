@@ -1,9 +1,9 @@
-import React,{ useState} from 'react'
-
-function FullLanding({section, children}) {
+function FullLanding({section, children, anchor}) {
 
   return (
-     <div className={`section bg-center bg-cover min-h-[100vh] ${section}`}>
+     <div 
+      className={`section bg-center bg-cover min-h-[100vh] ${section}`} 
+      data-anchor={anchor}>
         {children}
     </div>
   )

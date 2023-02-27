@@ -1,5 +1,6 @@
 import { useState, useEffect} from "react";
 import { navData } from "../../../assets/data";
+// not refactored and oncomplete yet for now
 
 function Nav1({Nav, setNav}) {
   const [windowWidth, setWindowWidth] = useState(true);

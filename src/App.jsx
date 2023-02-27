@@ -1,6 +1,6 @@
+import { BrowserRouter, Route , Routes } from 'react-router-dom'
 import './App.css'
 import Landing from './components/landing'
-import { BrowserRouter, Route , Routes } from 'react-router-dom'
 import Shop from './components/shop'
 import Drive from './components/drive'
 import Overview from './components/overview'

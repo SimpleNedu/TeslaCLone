@@ -1,5 +1,20 @@
 import React, { useState, useContext } from "react";
 
+
+const globalValue =  [
+        [false, false], 
+        [false, false], 
+        [false, false], 
+        [false, false], 
+        [false, false], 
+        [false, false],  
+        [false, false], 
+        [false, false], 
+        [false, false], 
+        [false, false], 
+        [false, false]
+]
+
 // creating the contexts neede
 const OpeningsAndClosing = React.createContext()
 export const UpdateAm =React.createContext()
@@ -10,53 +25,27 @@ export const useAm = () =>{
 }
 
 export function updater (number, action, setOrder){
-        const value =  [
-        [false, false], 
-        [false, false], 
-        [false, false], 
-        [false, false], 
-        [false, false], 
-        [false, false],  
-        [false, false], 
-        [false, false], 
-        [false, false], 
-        [false, false], 
-        [false, false]
-    ]
-        switch (action) {
-            case 'OPENRIGHT':
-                value[Number(number)]=[false, true]
-                break;
+    const value =  globalValue
+    switch (action) {
+        case 'OPENRIGHT':
+            value[Number(number)]=[false, true]
+            break;
 
-            case 'OPENLEFT':
-                value[Number(number)]=[true, false]
-                break;
-        
-            default:
-                break;
-        }
-        console.log(value)
-        return value
+        case 'OPENLEFT':
+            value[Number(number)]=[true, false]
+            break;
+    
+      default:
+              break;
+      }
+      return value
 }
 
 export function PopUp({children}) {
-    const [Order, setOrder] = useState([
-        [false, false], 
-        [false, false], 
-        [false, false], 
-        [false, false], 
-        [false, false], 
-        [false, false],  
-        [false, false], 
-        [false, false], 
-        [false, false], 
-        [false, false], 
-        [false, false]
-    ])
+    const [Order, setOrder] = useState(globalValue)
     
     return(
         <OpeningsAndClosing.Provider value={Order}>
-            {/* <UpdateAm.Provider value={setOrder}> */}
             <UpdateAm.Provider value={setOrder}>
                 {children}
             </UpdateAm.Provider>

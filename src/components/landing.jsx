@@ -15,7 +15,6 @@ function Landing() {
       </div>
       <PopUp
         children={<FullPageCaller/>}>
-        
       </PopUp>
     </section>
   )
