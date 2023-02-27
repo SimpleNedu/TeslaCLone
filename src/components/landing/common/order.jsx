@@ -23,7 +23,7 @@ function Order({order, setOrder, children, position}) {
             className="h-full w-full absolute">
         </div>
         <div
-            className="rounded-xl relative box-shadow sm:w-[30rem] sm:h-[20rem] w-[20rem] h-[21rem] bg-slate-900/80">
+            className="rounded-xl relative box-shadow sm:w-[30rem] sm:h-[20rem] w-[20rem] h-[19rem] bg-slate-900/80">
             <button
                 onClick={()=>setOrd()}
                 className="absolute -top-3 -right-3 bg-black text-white font-[800] btn-shadow rounded-[100%] p-[0.3rem]">
