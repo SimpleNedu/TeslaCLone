@@ -8,6 +8,7 @@ function Nav1({Nav, setNav}) {
     return data.map((data)=>{
       return(
         <a 
+          onClick={()=>setNav(true)}
           href={data.href}
           key={data.name}>
           <li>
